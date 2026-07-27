@@ -1,0 +1,23 @@
+{
+  "color": {
+    "background": "#F7F5F2",
+    "surface": "#FFFFFF",
+    "primary": "#2E3B34",
+    "accent": "#8A9A8B",
+    "text": "#1C1C1C",
+    "muted": "#6B6B6B",
+    "border": "#DDD9D2"
+  },
+  "radius": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "16px"
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "40px"
+  }
+}

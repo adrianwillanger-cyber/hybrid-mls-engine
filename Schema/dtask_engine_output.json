@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Task Engine Output",
+  "description": "Response shape returned by POST /process-listing (Backend/app.py)",
+  "type": "object",
+  "properties": {
+    "property_address": { "type": "string" },
+    "photos": { "type": "array" },
+    "detected_features": { "type": "array", "items": { "type": "string" } },
+    "market_data": { "type": ["object", "null"] },
+    "mls_general_remarks": { "type": "string" },
+    "nwmls_fields": { "type": "object" },
+    "room_narratives": { "type": "array", "items": { "type": "string" } },
+    "marketing_narrative": { "type": "string" },
+    "social_copy": { "type": "object" },
+    "email_scripts": { "type": "object" },
+    "flyer_text": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": [
+    "property_address",
+    "photos",
+    "detected_features",
+    "mls_general_remarks",
+    "nwmls_fields",
+    "room_narratives",
+    "marketing_narrative",
+    "social_copy",
+    "email_scripts",
+    "flyer_text"
+  ]
+}

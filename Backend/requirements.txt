@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-multipart
+azure-storage-blob
+pandas
+pydantic

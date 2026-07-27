@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NWMLS Field Set",
+  "description": "Structured field shape produced by Backend/models/compliance_filters.py:apply_mls_compliance()",
+  "type": "object",
+  "properties": {
+    "interior_features": { "type": "array", "items": { "type": "string" } },
+    "kitchen_features": { "type": "array", "items": { "type": "string" } },
+    "bath_features": { "type": "array", "items": { "type": "string" } },
+    "floor_coverings": { "type": "array", "items": { "type": "string" } },
+    "exterior_features": { "type": "array", "items": { "type": "string" } },
+    "heating_cooling": { "type": "array", "items": { "type": "string" } },
+    "energy_features": { "type": "array", "items": { "type": "string" } },
+    "lot_details": { "type": "array", "items": { "type": "string" } },
+    "community_features": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": [
+    "interior_features",
+    "kitchen_features",
+    "bath_features",
+    "floor_coverings",
+    "exterior_features",
+    "heating_cooling",
+    "energy_features",
+    "lot_details",
+    "community_features"
+  ]
+}
