@@ -1,5 +1,5 @@
 from fastapi import FastAPI, UploadFile, Form
-
+from fastapi.middleware.cors import CORSMiddleware
 from models.feature_detection import detect_features
 from models.compliance_filters import apply_mls_compliance
 from models.narrative_generator import (
@@ -15,7 +15,13 @@ from services.blob_storage import save_photo
 from services.market_data import parse_market_csv
 
 app = FastAPI(title="Hybrid Photo-to-MLS Narrative Engine")
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/process-listing")
 async def process_listing(
